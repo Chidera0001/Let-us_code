@@ -1,0 +1,118 @@
+header{
+    padding: 10px 5%;
+}
+
+#skip-to-main {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+#skip-to-main:focus {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    background-color: lightgray;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.landing {
+    background-image: url(images/algorithmns.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}  
+nav{
+    display: inline-block;
+    width: 100%;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 14px 2px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}   
+nav a:hover {
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+body{
+    font-size: larger;
+}
+h1{
+    font-size: 250%;
+}
+#Welcome{
+    text-align: center;
+    text-decoration: underline;
+}
+p{
+    text-align: justify;
+    font-size: larger;
+}
+img {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 7px;
+    height: 400px;
+    width:50% 
+}
+#robo{
+    width: 42%;
+}
+#lady{
+    width: 47%;
+}
+#AI{
+    text-align: center;
+    color: white;
+}
+.AI_P{
+    text-align: justify;
+    font-size: larger;
+}
+.AI_img{
+    padding: 3px;
+    border-radius: 7px;
+    display:inline-flex;
+    width: 100%;
+}
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: fit-content;
+} 
+.flex-container img:nth-child(2n) {
+    border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 200%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 175%;
+    }
+}
+
+@media (min-width: 800px) {
+    .flex-container img {
+        max-width: 80%;
+    }
+}
